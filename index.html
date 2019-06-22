@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elpy by Dima Borsch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slidernew.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://borschdima.github.io/elpy/favicon.ico">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Elpy</h1>
+        <p>Миксуйте. Создавайте свою собственную атмосферу.</p>
+    </div>
+
+    <div class="window">
+        <header>
+            <div class="general-volume">
+                <div class="btn btn-play"><i class="fa fa-play" aria-hidden="true"></i></div>
+                <div class="volume-slider">
+                    <div class="control">
+                        <span class="sound-name">Общая громкость</span>
+                        <span class="close hidden"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        <span id="sound-icon"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
+                    </div>
+                    <style class="general" data-name="general" scoped></style>
+                    <input type="range" min="0" max="100" value="50" data-color="#fff" data-name="general" id="range" class="slider general">
+                </div>
+            </div>
+            <div class="custom-volume">
+
+            </div>
+            <div class="presets">
+                <div class="timer">
+                    <div id="timer-stop" class="hidden"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div id="timer-left" class="hidden"><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span></div>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div class="btn save-set">Сохранить текущий пресет</div>
+                <div class="btn load-set">Заггрузить пресет</div>
+            </div>
+        </header>
+        <main>
+            <h3>Доступные звуки</h3>
+            <section class="sounds">
+                <div class="sound-item">
+                    <span class="sound-name">Пляж</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/beach.jpg" alt="beach"></div>
+                    <div class="shine" data-name="beach" data-color="#5AE3FF"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Птицы</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/birds.jpg" alt="birds"></div>
+                    <div class="shine" data-name="birds" data-color="#FCF44C"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Лес</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/forest.jpg" alt="forest"></div>
+                    <div class="shine" data-name="forest" data-color="#74DC74"></div>
+                </div>
+
+                <div class="sound-item">
+                    <span class="sound-name">Город</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/city.jpg" alt="city"></div>
+                    <div class="shine" data-name="city" data-color="#FCB680"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Кафе</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/cafe.jpg" alt="cafe"></div>
+                    <div class="shine" data-name="cafe" data-color="#F9CF05"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Сверчки</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/night-crickets.jpg" alt="night-crickets"></div>
+                    <div class="shine" data-name="night-crickets" data-color="#D5B5F6"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Дождь</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/rain.jpg" alt="rain"></div>
+                    <div class="shine" data-name="rain" data-color="#B4E4FC"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Поезд</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/train.jpg" alt="train"></div>
+                    <div class="shine" data-name="train" data-color="#F54D55"></div>
+                </div>
+                <div class="sound-item">
+                    <span class="sound-name">Ветер</span>
+                    <div class="fade"><span></span> </div>
+                    <div class="cover"><img src="img/wind.jpg" alt="wind"></div>
+                    <div class="shine" data-name="wind" data-color="#44FACC"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="logo">Elpy</div>
+        <div class="text">
+            <p>Приложение разработал - Борщ Дмитрий</p>
+            <p>Frontend/Backend разработчик</p>
+        </div>
+        <div class="social">
+            <p>Я в соцсетях</p>
+            <div class="icons">
+                <a href="https://vk.com/borsch_dima" target="__blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <a href="http://instagram.com/borsch_dima" target="__blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/dima.borsch" target="__blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal-load">
+        <div class="modal-cont">
+            <h2>Загрузить пресеты</h2>
+            <div class="user-presets">
+                <h3>Пользовательские пресеты</h3>
+                <div class="preset empty">
+                    <span>Вы еще не добавили свой пресет </span> <i class="fa fa-frown-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="default-presets">
+                <h3>Стандартные пресеты</h3>
+                <div class="preset">
+                    <div class="preset-name">Кафе возле пляжа</div>
+                    <div class="preset-sounds">
+                        <div class="sound" data-volume="50" data-name="cafe">Кафе</div>
+                        <div class="sound" data-volume="35" data-name="beach">Пляж</div>
+                    </div>
+                    <div class="delete-preset hidden"><i class="fa fa-trash" aria-hidden="true"></i></div>
+                </div>
+                <div class="preset">
+                    <div class="preset-name">Ночной лес</div>
+                    <div class="preset-sounds">
+                        <div class="sound" data-volume="50" data-name="forest">Лес</div>
+                        <div class="sound" data-volume="30" data-name="night-crickets">Сверчки</div>
+                    </div>
+                    <div class="delete-preset hidden"><i class="fa fa-trash" aria-hidden="true"></i></div>
+                </div>
+                <div class="preset">
+                    <div class="preset-name">Дневной экспресс</div>
+                    <div class="preset-sounds">
+                        <div class="sound" data-volume="90" data-name="rain">Дождь</div>
+                        <div class="sound" data-volume="20" data-name="train">Поезд</div>
+                        <div class="sound" data-volume="30" data-name="wind">Ветер</div>
+                    </div>
+                    <div class="delete-preset hidden"><i class="fa fa-trash" aria-hidden="true"></i></div>
+                </div>
+            </div>
+            <div class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="fade-modal"></div>
+    </div>
+
+    <div class="modal modal-save">
+        <div class="modal-cont">
+            <h2>Сохранить текущий пресет</h2>
+            <div class="empty-list">В данный момент звуки не проигрываются. <br>Выберите несколько и попробуйте еще раз.</div>
+            <div class="filled-list">
+                <div class="user-preset-name"><input type="text" id="preset-name" placeholder="Введите название пресета"></div>
+                <div class="buttons">
+                    <div class="btn save">Сохранить</div>
+                    <div class="btn cancel">Отмена</div>
+                </div>
+                <div class="error hidden">Пресет с таким именем уже существует!</div>
+            </div>
+            <div class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="fade-modal"></div>
+    </div>
+
+    <div class="modal modal-timer">
+        <div class="modal-cont">
+            <h2>Установвите время воспроизведения</h2>
+            <div class="time-control">
+                <style class="time" data-name="general" scoped></style>
+                <input type="range" min="1" max="100" value="10" data-color="#fff" data-name="time" id="timer" class="slider time">
+                <span></span>
+            </div>
+            <div class="buttons">
+                <div class="btn save-timer">Сохранить</div>
+                <div class="btn cancel">Отмена</div>
+            </div>
+            <div class="close-modal"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="fade-modal"></div>
+    </div>
+
+    <div class="mobile-view">
+        <h3>К сожалению, в данный момент приложение не доступно для мобильных устройств.</h3>
+        <div class="description">
+            <h4>Описание</h4>
+            <p>Elpy служит для воспроизведения комбинированной атмосферной звуковой дорожки, предлагая пользователю самостоятельно подобрать подходящее акустическое окружение. Программа позволяет
+                одновременно включить до девяти дорожек одновременно, задав каждой из них нужную громкость.</p>
+            <p>Сейчас в каталоге Elpy доступно девять атмосферных звуков: Пляж, Кафе, Город, Поезд, Лес, Ветер, Дождь, Птицы, Ночные сверчки. В будущем каталог может пополниться
+                новыми дорожками. Пользователю разрешается сохранять свои комбинации и предлагается несколько уже готовых.</p>
+            <p>Умеет программа и автоматически отключать воспроизведение звука через выбранный пользователем промежуток времени: от 1 до 100 минут. Полезно, если с Elpy вы планируете засыпать.</p>
+        </div>
+    </div>
+
+    <audio id="rain" src="sounds/rain.mp3" preload="auto" loop></audio>
+    <audio id="birds" src="sounds/birds.mp3" preload="auto" loop></audio>
+    <audio id="forest" src="sounds/forest.mp3" preload="auto" loop></audio>
+    <audio id="beach" src="sounds/beach.mp3" preload="auto" loop></audio>
+    <audio id="city" src="sounds/city.mp3" preload="auto" loop></audio>
+    <audio id="cafe" src="sounds/cafe.mp3" preload="auto" loop></audio>
+    <audio id="night-crickets" src="sounds/night-crickets.mp3" preload="auto" loop></audio>
+    <audio id="train" src="sounds/train.mp3" preload="auto" loop></audio>
+    <audio id="wind" src="sounds/wind.mp3" preload="auto" loop></audio>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
